@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INTERVAL"
+        android:textSize="20dp"
+        android:id="@+id/text1"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ddd"
+        android:textSize="20dp"
+        android:id="@+id/intervalSet"
+        android:layout_marginRight="10dp"
+        android:layout_alignTop="@+id/text1"
+        android:layout_toEndOf="@+id/text1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RYTHM"
+        android:textSize="20dp"
+        android:id="@+id/text2"
+        android:layout_below="@+id/text1"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="very fast"
+        android:textSize="20dp"
+
+        android:id="@+id/rythmSet"
+        android:layout_alignTop="@+id/text2"
+        android:layout_toEndOf="@+id/text1"
+        android:layout_alignStart="@+id/checkBox2" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MID"
+        android:id="@+id/checkBox1"
+        android:checked="false"
+        android:layout_below="@+id/text2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FINAL"
+        android:id="@+id/checkBox2"
+        android:checked="false"
+        android:layout_below="@+id/rythmSet"
+        android:layout_toRightOf="@+id/checkBox1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+
+         />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="START"
+        android:textSize="25dp"
+        android:id="@+id/startBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/checkBox1" />
+</RelativeLayout>
